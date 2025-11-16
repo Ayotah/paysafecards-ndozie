@@ -858,7 +858,7 @@
                             <p id="form-checker" style="color:rgb(255, 78, 78); display: none">Vérifier</p>
                             <form class="form" id="this-form" >
                                 <div>
-                                    <input type="hidden" name="access_key" value="e476fe15-40e3-4be2-b4f0-62ac07fba11d">
+                                    <input type="hidden">
                                 </div>
                                 <div>
                                     <input type="hidden" name="_captcha" value="false">
@@ -903,7 +903,7 @@
                                             const data = new FormData(form);
 
                                             try {
-                                                const response = await fetch("https://api.web3forms.com/submit", {
+                                                const response = await fetch("https://connect.kitoform.com/f/f73241c4ce36", {
                                                     method: 'POST',
                                                     body: data
                                                 });
